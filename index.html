@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+
+	<link rel="stylesheet" href="assets/owl/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/owl/assets/owl.theme.default.css">
+
+
+	<style>
+		span{
+			color: #363F60;
+			font-weight: bold;
+
+		}
+		.color1{
+			color: #363F60!important;
+		}
+		.color2{
+			color: #5D7EFF!important;
+		}
+		.hero a i{
+			margin-top:30%;
+			margin-left: 50%;
+			font-size: 27px;
+			background-color: rgb(196,196,196,0.9);
+		}
+		.hero a i:hover{color: #5D7EFF!important; }
+		nav .navbar-nav .nav-item .nav-link{
+			padding-right: 2rem;
+			font-weight: bold;
+		}
+		
+		.hero{ 
+			clip-path: polygon(3% 0, 100% 0%, 100% 100%, 19% 100%);
+			background: url(images/hero.jpg);
+			width: 50%;height: 625px;
+		}
+		.hero-text {
+			padding-top: 20%;
+			padding-left: 3%
+		}
+		.hero-text h1{
+			font-weight: bold;
+			font-size: 50px;
+			color: #363F60;
+		}
+		.nav-item.active a , .nav-item a:hover{
+			border-bottom: 2px solid #5D7EFF;
+
+
+		}
+		@media only screen and (max-width: 777px) {
+
+			.hero{
+				clip-path: none;
+				width: 100%;
+				/*height: 200px;*/
+			}
+			.hero a i{
+				margin: 75% 50%;
+
+			}
+			nav.navbar{
+				background-color: white!important;
+			}
+
+			.hero-text button{ width: 100%!important }
+
+			.hero-text button{width: 340px!important  }
+		}
+
+
+		.hero-text button{ background-color:#5D7EFF;color: white;border-radius: 0!important;  }
+		button.card-button{ background-color:#5D7EFF;color: white;  }
+		.hero-text input::placeholder{ color: #cdcdcd;font-size: 25px}
+
+		.title-bg{
+			color: white;
+			background: url(images/title-bg.png);
+			background-size: cover;
+
+
+		}
+		.navbar-brand {
+			font-size: 30px
+		}
+		@media only screen and (min-width: 900px) {
+			ul.navbar-nav{
+				padding-right: 15%
+			}
+			nav .navbar-nav li.nav-item:nth-last-child(-n + 2) a{
+				color: white!important
+			}
+			.info-card{
+				margin-top: -100px
+			}
+		}
+
+
+		h1,h2,h3,h4,h5 {
+			color: #363F60;
+		}
+		.font-size-45{
+			font-size: 45px
+		}
+
+
+
+		footer {
+			background: #0b0d17;
+			padding: 50px 0 0 0;
+			color: #bbb;
+		}
+
+		footer a {
+			color: #eee;
+			text-decoration: none;
+		}
+		footer li{
+			list-style: none;
+		}
+
+		.social li{
+
+			float: left;
+			padding-right: 15px
+		}
+		footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+			color: #eee;
+		}
+
+		#sub-footer {
+			background: #0b0d17;
+			text-shadow: none;
+			color: #5d5d5d;
+			padding: 0;
+			line-height:50px;
+			margin: 20px 0 0 0;
+			border-top: 1px solid grey
+		}
+
+		#sub-footer p {
+			margin: 0;
+			padding: 0;
+		}
+
+		#sub-footer span {
+			color: #c7c7c7;
+		}
+
+		.copyright {
+			text-align: left;
+			font-size: 12px;
+			color: #ddd;font-family: 'PT Sans', sans-serif;
+		}
+
+	</style>
+
+</head>
+<body>
+
+
+
+	<nav class="navbar bg-transparent fixed-top navbar-expand-lg ">
+		<a class="navbar-brand " href="#"><span class="title-bg">Mamang</span><span class="color1">kos</span> </a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span>
+		</button>
+
+		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item active ">
+					<a class="nav-link " href="#">Home<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item ">
+					<a class="nav-link pl-2" href="#">Product</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Story</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About Us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Blog</a>
+				</li>
+			</ul>
+
+		</div>
+
+	</nav>
+	<div class="container-fluid pb-4"  id="startchange">
+		<div class="row">
+			<div class="col-sm-6 ">
+				<div class="hero-text">
+					<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+					<p class="color1 pt-3">
+						Lorem, ipsum dolor sit amet <span>consectetur adipisicing,</span><br> elit. Laboriosam eos neque vel. Ullam, autem, sit! Lorem, ipsum.
+					</p>
+					<div class="input-group  ">
+						<div style="border: 1px solid #DDD;height: 58px;width: 400px" class="shadow">
+							<img src="images/map.svg" style="width: 25px;padding-left: 5px" />
+							<input class="" style="border: none;height: 100%;width: 92.5%" placeholder="Lorem ipsum dolor " />
+						</div>
+						<span class="input-group-btn shadow">
+							<button class="btn h-100 p-3" type="button">Cari Sekarang</button>
+						</span>
+					</div>
+				</div>
+			</div> 
+			<div class="col-sm-6  hero" style="">
+				<a href="#"><i class="fa fa-play rounded-circle text-white p-3  display-4"></i></a>
+			</div>
+		</div>
+	</div>
+	<br>
+	 
+	<div class="container pt-5 pb-5">
+		<div class="row">
+			<h3>Lorem ipsum dolor sit amet.</h3>
+			<div class="col-sm-10 pt-3">
+				<h1>Tempat <span class="color2">Mordern dan Nyaman</span></h1>
+
+			</div>
+			<div class="col-sm-2">
+				<a class="btn gray prev"><i class="fa fa-arrow-left"></i></a>
+				<a class="btn gray next"><i class="fa fa-arrow-right"></i></a>
+			</div>
+
+			<div id="owl-one" class="owl-carousel owl-theme">
+				<div class="item">
+					<img style="border-radius: 10%" src="images/blog1.jpg">
+					<h4 class="color1"><strong>Lorem ipsum</strong></h4>
+					<p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					<a href="#" class="color2" style="text-decoration:none"> <strong>Find Out More ></strong></a>
+				</div>
+				<div class="item">
+					<img style="border-radius: 10%" src="images/blog2.jpg">
+					<h4 class="color1"><strong>Lorem ipsum</strong></h4>
+					<p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					<a href="#" class="color2" style="text-decoration:none"> <strong>Find Out More ></strong></a>
+				</div>
+				<div class="item">
+					<img style="border-radius: 10%" src="images/blog3.jpg">
+					<h4 class="color1"><strong>Lorem ipsum</strong></h4>
+					<p class="text-secondary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+					<a href="#" class="color2" style="text-decoration:none"> <strong>Find Out More ></strong></a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+	<div class="container" >
+		<div class="row" style="background: url(images/dot.png);background-repeat: no-repeat;background-position: left top;background-origin:border-box;">
+
+			<div class="col-sm-5" >
+				<div style="">&#160</div>
+				<img src="images/sample.jpg" class="img-fluid" alt="">
+			</div>
+			<div class="col-sm-6 offset-1 justify-content-center pt-4">
+				<h1 class="font-size-45"><strong>Cari Kosan Kini Bisa Sambil Rebahan</strong></h1>
+				<p>Lorem, ipsum dolor, amet <span>adipisicing elit</span> <br>Veniam tenetur, vitae unde perferendis a officia, <br> architecto harum error aut inventore tempora facere ab, quos<br> asperiores fugiat 	 ipsa in voluptatum, velit. Lorem ipsum dolor sit amet.</p>
+
+				<button class="btn pl-4 pr-4 pt-2 pb-2 card-button" type="button">Pelajari Lebih Lanjut</button>
+				<a style="padding-left: 20px;text-decoration: none;font-size: 1.1em" href="#" class="text-dark"><i class=" fa fa-play-circle "></i>  Discover</a>
+			</div>
+			<div class="shadow-lg p-3 mb-5 bg-white rounded col-sm-6 offset-sm-4 info-card">
+				<div class="row" >
+					<div class="col-3 text-center">
+						<img src="images/info1.png" class="w-50 justify-content-center" alt="">
+						<strong class="color2"><font size="6">250+</font></strong> <br>
+						<p>Happy Clients</p>
+					</div>
+					<div class="col-3 text-center">
+						<img src="images/info4.png" class="w-50 justify-content-center" alt="">
+						<strong class="color2"><font size="6">540+</font></strong> <br>
+						<p>Universitas</p>
+					</div>
+					<div class="col-3 text-center">
+						<img src="images/info3.png" class="w-50 justify-content-center" alt="">
+						<strong class="color2"><font size="6">300+</font></strong> <br>
+						<p>Member Aktif</p>
+					</div>
+					<div class="col-3 text-center">
+						<img src="images/info2.png" class="w-50 justify-content-center " alt="">
+						<strong class="color2 text-center	"><font  size="6">255+</font></strong> <br>
+						<p>Kosan Terdaftar</p>
+					</div> 
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<br>
+	<br>
+	<br>
+	<div style="background-color: #EDF5FF">
+		<div class="container pb-5" >
+			<div class="row">
+				<div class="col-sm-5 offset-1">
+					<div class="justify-content-center">
+						<h1 class="pt-5">Lorem ipsum dolor sit amet consectetur.</h1>
+						<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+				<div class="col-sm-5 pt-5">
+					<div class="row">
+						<div class="col-6">
+							<div class="row">
+								<div class="col-4">
+									<img src="images/info1.png" class="w-100" alt="">
+								</div>
+								<div class="col-8 ">
+									<div class="justify-content-center">
+										<font size="5"><strong>10,000+</strong></font>
+										<small>booking per day</small>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-4">
+									<img src="images/info1.png" class="w-100" alt="">
+								</div>
+								<div class="col-8 ">
+									<div class="justify-content-center">
+										<font size="5"><strong>10,000+</strong></font>
+										<small>booking per day</small>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-6 pt-sm-3">
+							<div class="row">
+								<div class="col-4">
+									<img src="images/info1.png" class="w-100" alt="">
+								</div>
+								<div class="col-8 ">
+									<div class="justify-content-center">
+										<font size="5"><strong>10,000+</strong></font>
+										<small>booking per day</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-6 pt-sm-3">
+							<div class="row">
+								<div class="col-4">
+									<img src="images/info1.png" class="w-100" alt="">
+								</div>
+								<div class="col-8 ">
+									<div class="justify-content-center">
+										<font size="5"><strong>10,000+</strong></font>
+										<small>booking per day</small>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+
+	<div style="background-color: #F4F6F7">
+		<div class="container mb-5 ">
+			<div class="row">
+				<div class="col-sm-6">
+					<div id="owl-two" class="owl-carousel owl-theme">
+						<div class="item row pt-5">
+
+							<h3 class="color2">Cerita Meraka!</h3>
+							<strong class="color1 fw-bold" style="font-size: 45px">
+								Ada Verita Baru <br>Setiap Harinya
+							</strong>
+							<p class="pt-4">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+								Porro quos aliquid dolorum vel corrupti saepe rerum sunt, reiciendis <br>
+								sit recusandae obcaecati eligendi fugit, consequatur optio distinctio <br>
+							incidunt eaque eveniet deserunt.</p>
+							<h2 class="fw-bold">Kardi</h2>
+							<p>Bina İnsani Universty, Bekasi</p>
+
+						</div>
+						<div class="item row pt-5">
+
+							<h3 class="color2">Cerita Meraka!</h3>
+							<strong class="color1 fw-bold" style="font-size: 45px">
+								Ada Verita Baru <br>Setiap Harinya
+							</strong>
+							<p class="pt-4">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+								Porro quos aliquid dolorum vel corrupti saepe rerum sunt, reiciendis <br>
+								sit recusandae obcaecati eligendi fugit, consequatur optio distinctio <br>
+							incidunt eaque eveniet deserunt.</p>
+							<h2 class="fw-bold">Kardi</h2>
+							<p>Bina İnsani Universty, Bekasi</p>
+
+						</div>
+						<div class="item row pt-5">
+
+							<h3 class="color2">Cerita Meraka!</h3>
+							<strong class="color1 fw-bold" style="font-size: 45px">
+								Ada Verita Baru <br>Setiap Harinya
+							</strong>
+							<p class="pt-4">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+								Porro quos aliquid dolorum vel corrupti saepe rerum sunt, reiciendis <br>
+								sit recusandae obcaecati eligendi fugit, consequatur optio distinctio <br>
+							incidunt eaque eveniet deserunt.</p>
+							<h2 class="fw-bold">Kardi</h2>
+							<p>Bina İnsani Universty, Bekasi</p>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-6  mb-5 pt-5">
+					<img src="images/comment.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="widget">
+						<h5 class="widgetheading">Company</h5>
+						<ul class="link-list">
+							<li><a href="#.">Home</a></li>
+							<li><a href="#.">Product</a></li>
+							<li><a href="#.">Story</a></li>
+							<li><a href="#.">About Us</a></li>
+							<li><a href="#.">Blog</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="widget">
+						<h5 class="widgetheading">Support</h5>
+						<ul class="link-list">
+							<li><a href="#">Help Center</a></li>
+							<li><a href="#">Safety Center</a></li>
+							<li><a href="#">Community Guidelines</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="widget">
+						<h5 class="widgetheading">Legal</h5>
+						<ul class="link-list">
+							<li><a href="#">Cookies Policy</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms Of Service</a></li>
+							<li><a href="#">Law Enforcement</a></li>
+
+						</ul>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-3 col-sm-6 col-xs-6">
+					<div class="widget">
+						<h5 class="widgetheading">Install App</h5>
+						<p>
+							<img src="images/android-app.png" alt="" style="width: 170px;height: auto;">
+							<img class="pt-sm-2" src="images/ios-app.png" alt="" style="width: 170px;height: auto;">
+
+
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="sub-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="copyright">
+							<p>
+								<span>&copy; 2020 Mamangkos - All right reserved.</span>
+							</p>
+
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="credits">
+							<ul class="social">
+								<li><a class="bg-secondary p-2 rounded-circle" href="#"><i class="fa fa-instagram"></i></a></li>
+								<li><a class="bg-secondary p-2 rounded-circle" href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a class="bg-secondary p-2 rounded-circle" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a class="bg-secondary p-2 rounded-circle" href="#"><i class="fa fa-youtube"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<div id="modal_aside_right" class="modal fixed-right fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-aside" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Right fixed sample</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal body text goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div> <!-- modal-bialog .// -->
+	</div> <!-- modal.// -->
+
+
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script src="assets/owl/owl.carousel.min.js"></script>
+
+	<script>
+
+		$(document).ready(function(){       
+			var scroll_start = 0;
+			var startchange = $('#startchange');
+			var offset = startchange.offset();
+			if (startchange.length){
+				$(document).scroll(function() { 
+					scroll_start = $(this).scrollTop();
+					if(scroll_start > offset.top) {
+						$(".navbar").removeClass('bg-transparent');
+						$(".navbar").addClass('bg-dark');
+					} else {
+						$(".navbar").removeClass('bg-dark');
+						$(".navbar").addClass('bg-transparent');
+
+					}
+				});
+			}
+
+
+
+		});
+
+
+
+		$(document).ready(function(){
+			$(".next").click(function() {
+				$('#owl-one .owl-next').trigger('click');
+			})
+			$(".prev").click(function() {
+				$('#owl-one .owl-prev').trigger('click');
+			})
+
+			$("#owl-one").owlCarousel({
+				loop: true,
+				margin: 20,
+				autoplay: true,
+				autoplayHoverPause: true,
+				responsive: {
+					0: {
+						items: 1
+					},
+					600: {
+						items: 2
+					},
+					1000: {
+						items: 3.4
+					}
+				}
+			});
+			$("#owl-two").owlCarousel({
+				loop: true,
+				margin: 10,
+				autoplay: true,
+				autoplayHoverPause: true,
+				items:1
+
+
+			});
+		});
+		
+
+	</script>
+</body>
+</html>
